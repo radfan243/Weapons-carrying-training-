@@ -80,7 +80,7 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
                 Text(lessons[i].icon,style:const TextStyle(fontSize:22)),
                 Text(lessons[i].subtitle,style:TextStyle(fontWeight:FontWeight.bold,color:i==index?Colors.black:Colors.white70))
               ])
-            )))
+            ))
           ))
         ])
       ),
