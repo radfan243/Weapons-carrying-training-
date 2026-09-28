@@ -138,7 +138,7 @@ class TrainingPainter extends CustomPainter {
     final cx=s.width/2, floor=s.height*.82;
     final p=Paint()..style=PaintingStyle.stroke..strokeWidth=5..strokeCap=StrokeCap.round..color=const Color(0xFFB9FF3D);
     final soft=Paint()..style=PaintingStyle.stroke..strokeWidth=2..color=Colors.white12;
-    canvas.drawLine(20,floor,s.width-20,floor,soft);
+    canvas.drawLine(Offset(20,floor),Offset(s.width-20,floor),soft);
     for(int i=0;i<4;i++){ final r=55+i*32+math.sin(progress*math.pi*2+i)*3; canvas.drawCircle(Offset(cx,floor-80),r,soft); }
     final sway=math.sin(progress*math.pi*2)*7;
     final head=Offset(cx+sway*.3,floor-220);
